@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFORA - Blood Type Compatibility Checking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            height: 6cm;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', sans-serif;
+            letter-spacing: 2px;
+        }
+        .slogan {
+            font-size: 1.3em;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .content-box {
+            background-color: #8b90d6;
+            border: 3px solid navy;
+            border-radius: 15px;
+            padding: 50px;
+            margin: 50px auto;
+            width: 80%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .project-topic {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .project-description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: navy;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .images-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .images-wrapper img {
+            width: 45%;
+            border: 3px solid navy;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .images-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .skills-topic {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .skills-list {
+            font-size: 1.2em;
+            list-style-type: disc;
+            margin: 20px 0 0 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">DUNIVERSE</div>
+        <div class="slogan">Explore My Universe Through My Portfolio</div>
+    </header>
+    <section class="content-box">
+        <div class="project-topic">LIFORA 🩸🫂-Blood Type Compatibility Checking System- Java Based</div>
+        <div class="project-description">
+            <p>LIFORA is a Java-based Blood type compatibility checking system developed to support life-saving decisions in critical medical scenarios. The project offers: <br>
+
+                1. Blood Transfusion Compatibility: Identifies compatible donor blood types and Rh factors for safe transfusions.<br>
+                
+                2. Organ Transplant Compatibility: Checks compatibility using blood type and HLA values for organ transplantation. 
+                (HLA- human leukocyte antigen )<br>
+                
+                3. RhoGAM Vaccine Evaluation: Assesses the need for RhoGAM vaccination during pregnancy based on parental Rh factors.<br>This is a result of a team work including Thisen Nambukara, Tharidi Gamage and me.<br><br>
+                Key Features: <br>
+                1.Advanced algorithms for compatibility and decision-making.<br>
+                2.A user-friendly interface built with NetBeans IDE for intuitive interactions.<br>
+                3.Focused on critical healthcare needs with real-world applications.<br> <br>
+                
+                Technologies Used:
+                Java, NetBeans IDE and OOP principles.</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.open('https://github.com/dunithd13/pulse-minhttps://github.com/dunithd13/LIFORA-Project', '_blank')">GitHub Repository</button>
+            <button onclick="window.open('https://www.linkedin.com/posts/dunith-desitha-40b99929a_lifora-activity-7274662373532057600-xSGj?utm_source=share&utm_medium=member_desktop', '_blank')">LinkedIn Post</button>
+        </div>
+        <div class="images-wrapper">
+            <img src="Lifora.png" alt="Lifora Home" onclick="enlargeImage(this)">
+            <img src="Lifora1.png" alt="Service 1" onclick="enlargeImage(this)">
+            <img src="Lifora2.png" alt="Service 2" onclick="enlargeImage(this)">
+            <img src="Lifora3.png" alt="Service 3" onclick="enlargeImage(this)">
+        </div>
+        <div class="skills-topic">Skills I Developed from this Project</div>
+        <ul class="skills-list">
+            <li>Programming</li>
+            <li>Reseach Skills</li>
+            <li>Data Analysis</li>
+            <li>Project Management</li>
+        </ul>
+    </section>
+    <footer>
+        <div style="margin-top: 20px; padding: 20px; background-color: navy; color: white; text-align: center;">
+            &copy; 2025 DUNIVERSE by Dunith Desitha Ranawansha. All Rights Reserved.
+        </div>
+    </footer>
+    <script>
+        function enlargeImage(img) {
+            var src = img.src;
+            var modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            
+            var modalImg = document.createElement('img');
+            modalImg.src = src;
+            modalImg.style.maxWidth = '90%';
+            modalImg.style.maxHeight = '90%';
+            modalImg.style.border = '5px solid white';
+            modalImg.style.borderRadius = '10px';
+            
+            modal.appendChild(modalImg);
+            
+            document.body.appendChild(modal);
+            
+            modal.onclick = function() {
+                document.body.removeChild(modal);
+            };
+        }
+    </script>
+</body>
+</html>
